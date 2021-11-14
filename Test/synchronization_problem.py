@@ -7,7 +7,7 @@ lock = RLock()
 def increment():
     global counter
 
-    for i in range(0, 2000000):
+    for i in range(0, 20000000):
         #sem.acquire()
         lock.acquire()
         counter += 1
@@ -16,7 +16,7 @@ def increment():
 
 def decrement():
     global counter
-    for i in range(0, 2000000):
+    for i in range(0, 20000000):
         lock.acquire()
         counter -= 1
         lock.release()
