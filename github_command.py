@@ -35,7 +35,8 @@ and
 20>git checkout -b feature-2 # create new brach and select this branch
 21>git branch -D # fist go master branch and delete branch another branch
 22>git merge (branch file) #first go master and marge branch to master branch
-
+23>git remote add origin "https://githhub.com/winlintun.git"
+24>git push oriigin --delete "branch name"
 
 
 """)
