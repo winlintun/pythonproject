@@ -1,0 +1,9 @@
+1 > fact * i > 1 *  1 = 1
+2 > fact * i > 1 * 2 = 2
+3 > fact * i > 2 * 3 = 6
+4 > fact * i > 6 * 4 = 24
+5 > fact * i > 24 * 5 = 120
+
+
+mutable / immutable
+
