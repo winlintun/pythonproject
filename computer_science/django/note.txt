@@ -1,0 +1,2 @@
+1.django-admin startproject (sitename) > e.g> django-admin startproject mysite # mysite is project name
+
