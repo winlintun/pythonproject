@@ -1,2 +1,57 @@
 1.django-admin startproject (sitename) > e.g> django-admin startproject mysite # mysite is project name
 
+# runserver
+1.python manage.py runserver 
+
+#create application
+2.python manage.py startapp (appname) >e.g> python manage.py statapp main
+
+
+3. python manage.py migrate
+
+4. python manage.py makemigrations main
+
+5. python manage.py migrate
+
+6. python manage.py shell # create database and item & list
+>from main.models import Item, ToDoList
+>t = ToDoList(name="Tim\'s List")
+>t.save()
+>ToDoList.objects.all()
+# successful store our database in to do list
+>ToDoList.objects.get(id=1)
+>t.item_set.all()
+>t.item_set.create(text='Go to the mall', complete=False)
+>t.item_set.all()
+>t.item_set.get(id=1)
+
+
+7. python manage.py shell #
+>from main.models import Item, ToDoList
+>t = ToDoList.objects
+>t.all()
+>del_object = t.get(id=1)
+>del_object.delete()
+
+#create list
+>t1 = ToDoList(name="First List")
+>t1.save() # save t1 object
+
+#site/admin login and create username & password
+>python manage.py createsuperuser
+#give username & set password
+# now u can login admin dashboard
+
+
+
+
+
+
+
+
+
+'''
+facebook
+gmail: maymonzaw787@gmail.com
+pas  : mididrazaw2022
+'''
