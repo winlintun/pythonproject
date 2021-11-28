@@ -1,0 +1,18 @@
+p.right{
+text-align: right;
+}
+p.left{
+text-align: left;
+}
+p.center{
+text-align: center;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+#myid{
+	text-align: center;
+	color: red;
+}
