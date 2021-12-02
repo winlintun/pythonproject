@@ -6,7 +6,19 @@ mg_chat = {'age': 21, 'gender': 'male','university':'MTU'}
 
 print(mg_chat['age'])
 print(mg_chat['gender'])
+print("---------------------")
+mg = {'mgmg':123}
+i = 'mgmg'
+j = 123
+if i == mg[i]:
+    print("hi")
+    if j == mg[j]:
+        print("done")
+else:
+    print("Faile")
 
+
+print()
 #add
 mg_chat['native_town'] = 'magway'
 print(mg_chat)
@@ -19,7 +31,7 @@ print(mg_chat)
 mg_chat['age'] = '21' #add equal to replace he is overwrite
 
 print(mg_chat.keys())
-print(mg_chat.values())
+print('vluae', mg_chat.values())
 print(mg_chat.items())
 
 phone_price = {'iphone':{'12 min':'$699','12':'%799','12pro':'$999','12 pro max':'$1099'},
@@ -50,7 +62,7 @@ for i in shop.values():
     print(i)#value
 
 print()
-print()
+print("---------------------")
 for i,j in shop.items():
     print(i,end=':')
     print(j)
