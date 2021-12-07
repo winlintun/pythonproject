@@ -8,6 +8,44 @@ def menu():
 user_database = {}
 
 
+def Product():
+    #Gust_Account()
+    product = {
+        'apple': 500,
+        'orange': 150,
+        'pineapple': 1000,
+        'mango': 500,
+        'strawberry 1sets': 2300,
+        'banana': 200
+    }
+    print("\n------>Product lists<------")
+    for k, v in product.items():
+        print(k, 'price: ', v)
+
+    shop_list = []
+    shop = input("\nEnter product: ")
+    while shop != 'OFF':
+        if shop in product.keys():
+            shop_list.append(shop)
+            total = 0
+            for item in shop_list:
+                total += product[item]
+                print("Your price: ", total)
+            user = input("Buy Again? (Y/N): ")
+            if user == 'Y' or user == 'y':
+
+                for item in shop_list:
+                    total += product[item]
+                    print("Your price: ", total)
+            else:
+                print("Total price: ", total)
+                return 'OFF'
+        elif shop not in product.keys():
+            print("No Found your want product")
+            return 'OFF'
+    Product()
+
+
 def Register():
     print("\n<<<<<<<<<<<Welcome Register From<<<<<<<<<<<")
     try:
@@ -26,6 +64,7 @@ def Register():
 
 def Login():
     print("\n<<<<<<<<<<<Welcome Login From<<<<<<<<<<<")
+    user_database['admin'] = 123
     try:
         username = str(input("Enter username: "))
         password = int(input("Enter password: "))
@@ -40,7 +79,7 @@ def Login():
         elif username in user_database.keys():
             if password not in user_database.values():
                 print("Wrong Password!")
-                pass # to go try agin or not
+                pass # to go try again or not
         else:
             print("Your account does not exist my database.\n Please try again!!!")
     except ValueError:
@@ -50,8 +89,9 @@ def Login():
 
 def Gust_Account():
     print("\n<<<<<<<<<<<Welcome Gust User<<<<<<<<<<<")
+    user_database['gust'] = 123
     pass
-    return run_again()
+    #return run_again()
 
 
 def run_again():
@@ -86,4 +126,5 @@ def user_login():
 
 
 if __name__ == '__main__':
-    user_login()
+    #user_login()
+    Product()

@@ -15,3 +15,24 @@ if u in dic:
 
 else:
     print('faile')
+
+print()
+
+
+prices = {
+    "banana": 4,
+    "apple": 2,
+    "orange": 1.5,
+    "pear": 3
+}
+def compute_bill(food):
+    total = 0
+    for item in food:
+        total += prices[item]
+    print(total)
+    return total
+
+
+shopping_list = ["banana", "orange", "apple"]
+
+compute_bill(shopping_list)
